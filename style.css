@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'DeadlockTitle';
+  src: url('fonts/ValvePulp-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DeadlockBody';
+  src: url('fonts/ValveOccult-SemiBold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: bold;
+  font-display: swap;
+}
+
+body {
+    font-family: 'DeadlockBody';
+}
+
+h1 {
+    font-family: 'DeadlockTitle';
+}
