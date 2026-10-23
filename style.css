@@ -16,8 +16,53 @@
 
 body {
     font-family: 'DeadlockBody';
+    margin: 0;
 }
 
-h1 {
+header {
+  background-image: url(fotos/themalestrom2.png);
+  background-size: contain;
+}
+
+div.rey{
+  background-image: url(fotos/1280px-Hidden_king_art.png);
+  background-size: auto;
+  background-position: 30% 0%;
+  color: white;
+}
+
+div.rey>img{
+  margin-top: 5%;
+}
+
+div>a img {
+  margin-left: 20%;
+}
+
+div.rey table tr{
+  vertical-align: top;
+}
+
+div.rey table tr>td{
+  text-align: left;
+}
+
+td.parrafo {
+  padding-right: 50%;
+  color: black;
+}
+
+td.parrafo p{
+  text-align: center;
+}
+
+div.archmother{
+  background-image: url(fotos/Archmother_art.png);
+  background-size: auto;
+  background-position: 40% 6%;
+  color: white;
+}
+
+h1, h2, h3 {
     font-family: 'DeadlockTitle';
 }
