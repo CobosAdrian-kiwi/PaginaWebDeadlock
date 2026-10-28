@@ -54,7 +54,41 @@ td.parrafo {
 
 td.parrafo p{
   text-align: center;
+  background-color: rgba(86, 46, 0, 0.5);
+  border-radius: 5px;
+  color: white;
+  margin-top: -3px;
 }
+
+/* Menu de ver mas */
+
+input#btn-HiddenVerMas {
+  display: none;
+}
+
+
+td.parrafo label {
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  background-color: rgb(86, 46, 0);
+  border-radius: 5px;
+  color: white;
+  margin: 0px 40px;
+}
+
+
+td.parrafo p {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Transición suave opcional */
+}
+
+input#btn-HiddenVerMas:checked ~ p {
+  visibility: visible;
+  opacity: 1;
+}
+
 
 div.archmother{
   background-image: url(fotos/Archmother_art.png);
@@ -66,3 +100,4 @@ div.archmother{
 h1, h2, h3 {
     font-family: 'DeadlockTitle';
 }
+
