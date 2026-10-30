@@ -12,12 +12,19 @@
 
     <header>
 
-        <nav id="top">
-            <a href="#">Los patrones</a>
-            <a href="#">La manzana maldita</a>
-            <a href="#">Personajes</a>
-            <a href="#">Formulario</a>
-        </nav>
+        <div class="flotante">
+            <nav id="top">
+                <label for="btn-nav" id="btn-nav-imagen"><img src="fotos/favicon.png" alt="Navegación" width="50px"></label>
+                <input type="checkbox" id="btn-nav" value="false">
+                <label for="btn-nav" class="overlay"></label>
+                <ul class="lista-nav">
+                    <li><a href="#Patrones">Los patrones</a></li>
+                    <li><a href="#Manzana">La manzana maldita</a></li>
+                    <li><a href="#Personajes">Personajes</a></li>
+                    <li><a href="#">Formulario</a></li>
+                </ul>
+            </nav>
+        </div>
 
         <div id="titulo">
             <img src="fotos/deadlockTitle2.png" width="100%">
@@ -30,45 +37,48 @@
         <div class="Partones">
             
             
-                <h1>Conoce: Los patrones</h1>
+                <h1 id="Patrones">Conoce: Los patrones</h1>
                 
                 <p>Conoce a los patrones de el ritual, únete a uno de ellos y al ganar el ritual, te concederán un deseo.</p>
 
-            <div class="rey">
-                <img src="fotos/120px-Hidden_King_spanish.png" width="200px">
-                <br>
-                <a href="fotos/Hidden_King_model.png"><img src="fotos/120px-Hidden_King.png" width="50px"></a>
-                <table>
-                    <tr>
-                        <td class="parrafo">
-                            <label for="btn-HiddenVerMas">Saber más...</label>
-                            <input type="checkbox" id="btn-HiddenVerMas" value="false">
-                            <p>La estirada sombra de la altura de un rascacielos... un apartamento tapiado en la cocina del infierno... El Rey Oculto existe en las grietas de la ciudad, esperando a que sus seguidores lo libren a la luz</p>
-                        </td>
-                    </tr>
-                    
-                </table>
-            </div>
-            <div class="archmother">
-                <img src="fotos/1920px-Archmother_spanish.png" width="200px">
-                <br>
-                <a href="fotos/Archmother_model.png"><img src="fotos/120px-Archmother.png" width="50px"></a>
-                <table>
-                    <tr>
-                        <td class="parrafo">
-                            <p class="verMasPatrones">Ver más...</p>
-                            <p>Cristal, acero y piedra... Orden y poder donde nunca hubo nada... La Archimadre siempre ha guiado la mano de los fundadores, ahora es el turno de darle la bienvenida a casa</p>
-                        </td>
-                    </tr>
-                    
-                </table>
+            <div class="slider">
+                <div class="tarjetaPatron rey">
+                    <img src="fotos/120px-Hidden_King_spanish.png" width="200px">
+                    <br>
+                    <a href="fotos/Hidden_King_model.png"><img src="fotos/120px-Hidden_King.png" width="50px"></a>
+                    <table>
+                        <tr>
+                            <td class="parrafo">
+                                <label for="btn-HiddenVerMas">Saber más...</label>
+                                <input type="checkbox" id="btn-HiddenVerMas" value="false">
+                                <p>La estirada sombra de la altura de un rascacielos... un apartamento tapiado en la cocina del infierno... El Rey Oculto existe en las grietas de la ciudad, esperando a que sus seguidores lo libren a la luz</p>
+                            </td>
+                        </tr>
+                
+                    </table>
+                </div>
+                <div class="tarjetaPatron archmother">
+                    <img src="fotos/1920px-Archmother_spanish.png" width="200px">
+                    <br>
+                    <a href="fotos/Archmother_model.png"><img src="fotos/120px-Archmother.png" width="50px"></a>
+                    <table>
+                        <tr>
+                            <td class="parrafo">
+                                <label for="btn-ArchVerMas" id="labelArch">Saber más...</label>
+                                <input type="checkbox" id="btn-ArchVerMas" value="false">
+                                <p id="parrafoArch">Cristal, acero y piedra... Orden y poder donde nunca hubo nada... La Archimadre siempre ha guiado la mano de los fundadores, ahora es el turno de darle la bienvenida a casa</p>
+                            </td>
+                        </tr>
+                
+                    </table>
+                </div>
             </div>
         </div>
                 
 
         <div class="Mapa">
 
-            <h1>Conoce: La manzana maldita</h1>
+            <h1 id="Manzana">Conoce: La manzana maldita</h1>
 
             <div class="lane" id="broadway">
 
@@ -119,7 +129,7 @@
 
         <div class="Personajes">
 
-            <h1>Conoce: Los Locales de Nueva York</h1>
+            <h1 id="Personajes">Conoce: Los Locales de Nueva York</h1>
 
             <a><img></a><p></p>
             <a><img></a><p></p>

@@ -22,7 +22,97 @@ body {
 header {
   background-image: url(fotos/themalestrom2.png);
   background-size: contain;
+  margin-bottom: 60%;
 }
+
+.flotante {
+  position: fixed;          /* es el contenedor el que se queda pegado */
+  top: 0px;
+  right: 0px;
+  z-index: 20;
+  background: #222;
+  border-radius: 16px 0px 0px 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  overflow: hidden;         /* recorta el menú mientras está cerrado */
+  transition: width 0.3s ease;
+}
+
+#btn-nav {
+  display: none;
+}
+
+#btn-nav-imagen {
+  display: block;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.lista-nav {
+  display: none;
+  flex-direction: column;
+  max-height: 0;            /* cerrado */
+  overflow: hidden;
+  transition: max-height 0.3s;
+  margin-left: 3px;
+  margin-left: 0px;
+  list-style-position: inside;
+}
+
+.lista-nav li {
+  margin-bottom: 3dvh;
+  min-height: 32px;
+  padding: 6px 15px 6px 20px;       /* el hueco de la izquierda es para la imagen */
+  display: flex;
+  align-items: center;              /* texto centrado en vertical */
+  background: url("fotos/14px-Souls.png") no-repeat 12px center;
+  text-align: left;
+}
+
+.lista-nav a {
+  padding: 12px 16px;
+  color: #60f8b3;
+  font-family: 'DeadlockTitle';
+  font-size: 24px;
+  text-decoration: none;
+}
+
+#btn-nav:checked ~ .lista-nav {
+  max-height: 100%;        /* abierto */
+  display: flex;
+}
+
+.flotante:has(#btn-nav:checked) {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100dvh;
+  border-radius: 16px 0px 0px 16px;
+}
+
+
+
+/* Sistema de tarjetas y cards */
+.slider {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 16px;
+  scroll-padding-left: 16px;      /* para que el snap respete el padding */
+  scrollbar-width: none;
+}
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.tarjetaPatron {
+  flex: 0 0 90%;                  /* ocupa el 85%, el resto deja asomar la siguiente */
+  scroll-snap-align: start;
+  min-height: 200px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
 
 div.rey{
   background-image: url(fotos/1280px-Hidden_king_art.png);
@@ -36,7 +126,7 @@ div.rey>img{
 }
 
 div>a img {
-  margin-left: 20%;
+  margin-left: 30%;
 }
 
 div.rey table tr{
@@ -48,13 +138,22 @@ div.rey table tr>td{
 }
 
 td.parrafo {
-  padding-right: 50%;
+  padding-right: 30%;
+  padding-left: 5%;
   color: black;
 }
 
 td.parrafo p{
   text-align: center;
   background-color: rgba(86, 46, 0, 0.5);
+  border-radius: 5px;
+  color: white;
+  margin-top: -3px;
+}
+
+td.parrafo p#parrafoArch{
+  text-align: center;
+  background-color: rgba(0, 20, 86, 0.5);
   border-radius: 5px;
   color: white;
   margin-top: -3px;
@@ -85,6 +184,26 @@ td.parrafo p {
 }
 
 input#btn-HiddenVerMas:checked ~ p {
+  visibility: visible;
+  opacity: 1;
+}
+
+input#btn-ArchVerMas {
+  display: none;
+}
+
+
+td.parrafo label#labelArch {
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  background-color: rgb(44, 50, 84);
+  border-radius: 5px;
+  color: white;
+  margin: 0px 40px;
+}
+
+input#btn-ArchVerMas:checked ~ p {
   visibility: visible;
   opacity: 1;
 }
