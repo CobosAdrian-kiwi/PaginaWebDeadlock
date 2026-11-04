@@ -17,10 +17,12 @@
 body {
     font-family: 'DeadlockBody';
     margin: 0;
+    background-color: #191516;
+    color: #F4E7D3;
 }
 
 header {
-  background-image: url(fotos/themalestrom2.png);
+  background-image: url(fotos/general/themalestrom2.png);
   background-size: contain;
   margin-bottom: 60%;
 }
@@ -64,7 +66,7 @@ header {
   padding: 6px 15px 6px 20px;       /* el hueco de la izquierda es para la imagen */
   display: flex;
   align-items: center;              /* texto centrado en vertical */
-  background: url("fotos/14px-Souls.png") no-repeat 12px center;
+  background: url("fotos/general/14px-Souls.png") no-repeat 12px center;
   text-align: left;
 }
 
@@ -74,6 +76,10 @@ header {
   font-family: 'DeadlockTitle';
   font-size: 24px;
   text-decoration: none;
+}
+
+.Patrones {
+  background-color: #DA5A29;
 }
 
 #btn-nav:checked ~ .lista-nav {
@@ -115,7 +121,7 @@ header {
 
 
 div.rey{
-  background-image: url(fotos/1280px-Hidden_king_art.png);
+  background-image: url(fotos/patrones/1280px-Hidden_king_art.png);
   background-size: auto;
   background-position: 30% 0%;
   color: white;
@@ -210,7 +216,7 @@ input#btn-ArchVerMas:checked ~ p {
 
 
 div.archmother{
-  background-image: url(fotos/Archmother_art.png);
+  background-image: url(fotos/patrones/Archmother_art.png);
   background-size: auto;
   background-position: 40% 6%;
   color: white;
@@ -220,3 +226,333 @@ h1, h2, h3 {
     font-family: 'DeadlockTitle';
 }
 
+
+div#broadway h2{
+  display: inline-block;
+  padding: 4px 12px;
+  color: #191516;
+  background-color: #60CDE3;
+  border-radius: 16px;
+  font-size: xx-large;
+  margin-left: 10px;
+}
+
+div#broadway {
+  margin-top: 10px;
+  background-color: #1C3235;
+}
+
+div#greenwich h2{
+  display: inline-block;
+  padding: 4px 12px;
+  color: #191516;
+  background-color: #60f8b3;
+  border-radius: 16px;
+  font-size: xx-large;
+  margin-left: 10px;
+}
+
+div#greenwich {
+  margin-top: 10px;
+  background-color: #28391D;
+}
+
+div#york h2{
+  display: inline-block;
+  padding: 4px 12px;
+  color: #191516;
+  background-color: #FDE14D;
+  border-radius: 16px;
+  font-size: xx-large;
+  margin-left: 10px;
+}
+
+div#york{
+  margin-top: 10px;
+  background-color: #3E361A;
+}
+
+/* Carretes lineas mapas */
+.carreteLinea {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 24px 16px 16px;   /* arriba 24px (para la etiqueta), resto como antes */
+  scroll-padding-left: 16px;
+  scrollbar-width: none;
+}
+.carreteLinea::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Carrete Broadway */
+
+.tarjetaBroadway {
+  position: relative;
+  flex: 0 0 90%;                  
+  scroll-snap-align: start;
+  min-height: 200px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 14px;
+}
+
+.Uptown {
+  background-image: url(fotos/mapa/broadway/uptown_01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.TituloUptown {
+  position: absolute;
+  top: -14px;
+  left: -6px;
+  padding: 0px 10px;
+  background: #000d18;
+  color: #F4E7D3;
+  font-family: 'DeadlockBody';
+  font-size: 22px;
+  transform: rotate(-8deg);
+  transform-origin: left bottom;
+  z-index: 2;
+  border-radius: 16px;
+  border: solid 4px #60CDE3;
+}
+
+.TituloUptown p {
+  margin: 5px auto;
+}
+
+.TimesSquare {
+  background-image: url(fotos/mapa/broadway/times_square_05.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.TituloTimesSquare {
+  position: absolute;
+  top: -14px;
+  left: -6px;
+  padding: 0px 22px;
+  background: #000000;
+  color: #F4E7D3;
+  font-family: 'DeadlockBody';
+  font-size: 22px;
+  transform: rotate(-8deg);
+  transform-origin: left bottom;
+  z-index: 2;
+  border-radius: 16px;
+  border: solid 4px #60CDE3;
+}
+
+.TituloTimesSquare p {
+  margin: 5px auto;
+}
+
+.Downtown {
+  background-image: url(fotos/mapa/broadway/broadway_01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.TituloDowntown {
+  position: absolute;
+  top: -14px;
+  left: -6px;
+  padding: 0px 22px;
+  background: #000000;
+  color: #F4E7D3;
+  font-family: 'DeadlockBody';
+  font-size: 22px;
+  transform: rotate(-8deg);
+  transform-origin: left bottom;
+  z-index: 2;
+  border-radius: 16px;
+  border: solid 4px #60CDE3;
+}
+
+.TituloDowntown p {
+  margin: 5px auto;
+}
+
+/* Carrete Greenwich */
+
+.tarjetaGreenwich {
+  position: relative;
+  flex: 0 0 90%;                  
+  scroll-snap-align: start;
+  min-height: 200px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 14px;
+}
+
+.Umbria {
+  background-image: url(fotos/mapa/greenwich/campus_01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.TituloUmbria {
+  position: absolute;
+  top: -14px;
+  left: -6px;
+  padding: 0px 10px;
+  background: #000d18;
+  color: #F4E7D3;
+  font-family: 'DeadlockBody';
+  font-size: 22px;
+  transform: rotate(-8deg);
+  transform-origin: left bottom;
+  z-index: 2;
+  border-radius: 16px;
+  border: solid 4px #97DA79;
+}
+
+.TituloUmbria p {
+  margin: 5px auto;
+}
+
+.CentralPark {
+  background-image: url(fotos/mapa/greenwich/central_park_02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.TituloCentralPark {
+  position: absolute;
+  top: -14px;
+  left: -6px;
+  padding: 0px 22px;
+  background: #000000;
+  color: #F4E7D3;
+  font-family: 'DeadlockBody';
+  font-size: 22px;
+  transform: rotate(-8deg);
+  transform-origin: left bottom;
+  z-index: 2;
+  border-radius: 16px;
+  border: solid 4px #97DA79;
+}
+
+.TituloCentralPark p {
+  margin: 5px auto;
+}
+
+.Brownstones {
+  background-image: url(fotos/mapa/greenwich/brownstones.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.TituloBrownstones {
+  position: absolute;
+  top: -14px;
+  left: -6px;
+  padding: 0px 22px;
+  background: #000000;
+  color: #F4E7D3;
+  font-family: 'DeadlockBody';
+  font-size: 22px;
+  transform: rotate(-8deg);
+  transform-origin: left bottom;
+  z-index: 2;
+  border-radius: 16px;
+  border: solid 4px #97DA79;
+}
+
+.TituloBrownstones p {
+  margin: 5px auto;
+}
+
+/* Carrete York */
+
+.tarjetaYork {
+  position: relative;
+  flex: 0 0 90%;                  
+  scroll-snap-align: start;
+  min-height: 200px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 14px;
+}
+
+.Stock {
+  background-image: url(fotos/mapa/york/stock_exchange_03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.TituloStock {
+  position: absolute;
+  top: -14px;
+  left: -6px;
+  padding: 0px 10px;
+  background: #000d18;
+  color: #F4E7D3;
+  font-family: 'DeadlockBody';
+  font-size: 22px;
+  transform: rotate(-8deg);
+  transform-origin: left bottom;
+  z-index: 2;
+  border-radius: 16px;
+  border: solid 4px #FDE14D;
+}
+
+.TituloStock p {
+  margin: 5px auto;
+}
+
+.Seaport {
+  background-image: url(fotos/mapa/york/seaport_01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.TituloSeaport {
+  position: absolute;
+  top: -14px;
+  left: -6px;
+  padding: 0px 22px;
+  background: #000000;
+  color: #F4E7D3;
+  font-family: 'DeadlockBody';
+  font-size: 22px;
+  transform: rotate(-8deg);
+  transform-origin: left bottom;
+  z-index: 2;
+  border-radius: 16px;
+  border: solid 4px #FDE14D;
+}
+
+.TituloSeaport p {
+  margin: 5px auto;
+}
+
+.Fairfax {
+  background-image: url(fotos/mapa/york/factory_03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.TituloFairfax {
+  position: absolute;
+  top: -14px;
+  left: -6px;
+  padding: 0px 22px;
+  background: #000000;
+  color: #F4E7D3;
+  font-family: 'DeadlockBody';
+  font-size: 22px;
+  transform: rotate(-8deg);
+  transform-origin: left bottom;
+  z-index: 2;
+  border-radius: 16px;
+  border: solid 4px #FDE14D;
+}
+
+.TituloFairfax p {
+  margin: 5px auto;
+}
