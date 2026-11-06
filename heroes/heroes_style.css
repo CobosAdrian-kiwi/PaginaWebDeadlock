@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'DeadlockTitle';
+  src: url('../fonts/ValvePulp-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DeadlockBody';
+  src: url('../fonts/ValveOccult-SemiBold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: bold;
+  font-display: swap;
+}
+
+body {
+    margin: 0;
+    background-color: #191516;
+    color: #F4E7D3;
+}
+
+header {
+    font-family: 'DeadlockTitle';
+    font-size: xx-large;
+}
+
+header a {
+    color: #60f8b3;
+}
+
+#nombre {
+    width: 98%;
+    margin: 5% 1%;
+}
+
+p {
+    font-family: 'DeadlockBody';
+}
+
+.render {
+    text-align: right;
+    align-items: end;
+}
+
+.render img {
+    width: 100%;
+    margin-top: 5%;
+}

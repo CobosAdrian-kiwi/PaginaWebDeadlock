@@ -227,6 +227,14 @@ h1, h2, h3 {
 }
 
 
+.tarjetaBroadway > a,
+.tarjetaGreenwich > a,
+.tarjetaYork > a {
+  position: absolute;
+  inset: 0;                 /* top/right/bottom/left: 0 */
+  border-radius: 16px;
+}
+
 div#broadway h2{
   display: inline-block;
   padding: 4px 12px;
@@ -235,6 +243,11 @@ div#broadway h2{
   border-radius: 16px;
   font-size: xx-large;
   margin-left: 10px;
+}
+div#Mapa>img {
+  vertical-align: middle;
+  margin-left: 10px;
+  padding-bottom: 12px;
 }
 
 div#broadway {
@@ -555,4 +568,203 @@ div#york{
 
 .TituloFairfax p {
   margin: 5px auto;
+}
+
+/* Carrete de heroes */
+.carreteHeroes {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 16px 16px 60px;
+  scroll-padding-left: 16px;
+  scrollbar-width: none;
+}
+.carreteHeroes::-webkit-scrollbar {
+  display: none;
+}
+
+.tarjetaHeroe {
+  position: relative;
+  flex: 0 0 30%;                  
+  scroll-snap-align: start;
+  min-height: 160px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 14px;
+  border: solid #F4E7D3;
+}
+
+.tarjetaHeroe a {
+  position: absolute;
+  inset: 0;              /* equivale a top/right/bottom/left: 0 */
+  border-radius: 16px; 
+}
+
+.Baba{
+  background-image: url(fotos/heroes/baba/150px-Baba_card.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#tituloBaba {
+  position: absolute;
+  bottom: -45px;
+  left: -3px;
+  right: -3px;
+  background: #F4E7D3;
+  color: #000d18;
+  font-family: 'DeadlockBody';
+  font-size: 22px;
+  z-index: 2;
+  border-radius: 0px 0px 16px 16px;
+  text-align: center;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;  /* centrado horizontal */
+  align-items: center; 
+}
+#tituloBaba p{
+  margin: 5px; 
+}
+
+.Danny{
+  background-image: url(fotos/heroes/danny/Deadman_Danny_card.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#tituloDanny {
+  position: absolute;
+  bottom: -45px;
+  left: -3px;
+  right: -3px;
+  background: #F4E7D3;
+  color: #000d18;
+  font-family: 'DeadlockBody';
+  font-size: 22px;
+  z-index: 2;
+  border-radius: 0px 0px 16px 16px;
+  text-align: center;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;  /* centrado horizontal */
+  align-items: center; 
+}
+#tituloDanny p{
+  margin: 5px;
+}
+
+.Harrow{
+  background-image: url(fotos/heroes/harrow/Nurse_Harrow_card.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#tituloHarrow {
+  position: absolute;
+  bottom: -45px;
+  left: -3px;
+  right: -3px;
+  background: #F4E7D3;
+  color: #000d18;
+  font-family: 'DeadlockBody';
+  font-size: 22px;
+  z-index: 2;
+  border-radius: 0px 0px 16px 16px;
+  text-align: center;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;  /* centrado horizontal */
+  align-items: center; 
+}
+#tituloHarrow p{
+  margin: 5px;
+}
+
+.RatKing{
+  background-image: url(fotos/heroes/reyRata/150px-Rat_King_card.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#tituloRatKing {
+  position: absolute;
+  bottom: -45px;
+  left: -3px;
+  right: -3px;
+  background: #F4E7D3;
+  color: #000d18;
+  font-family: 'DeadlockBody';
+  font-size: 22px;
+  z-index: 2;
+  border-radius: 0px 0px 16px 16px;
+  text-align: center;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;  /* centrado horizontal */
+  align-items: center; 
+}
+#tituloRatKing p{
+  margin: 5px;
+}
+
+.Salomon{
+  background-image: url(fotos/heroes/salomon/150px-Solomon_card.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#tituloSalomon {
+  position: absolute;
+  bottom: -45px;
+  left: -3px;
+  right: -3px;
+  background: #F4E7D3;
+  color: #000d18;
+  font-family: 'DeadlockBody';
+  font-size: 22px;
+  z-index: 2;
+  border-radius: 0px 0px 16px 16px;
+  text-align: center;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;  /* centrado horizontal */
+  align-items: center; 
+}
+#tituloSalomon p{
+  margin: 5px;
+}
+
+.Violet{
+  background-image: url(fotos/heroes/violet/Violet_card.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#tituloViolet {
+  position: absolute;
+  bottom: -45px;
+  left: -3px;
+  right: -3px;
+  background: #F4E7D3;
+  color: #000d18;
+  font-family: 'DeadlockBody';
+  font-size: 22px;
+  z-index: 2;
+  border-radius: 0px 0px 16px 16px;
+  text-align: center;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;  /* centrado horizontal */
+  align-items: center; 
+}
+#tituloViolet p{
+  margin: 5px;
 }
