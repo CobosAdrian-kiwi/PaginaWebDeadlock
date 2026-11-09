@@ -106,6 +106,7 @@ header {
   padding: 16px;
   scroll-padding-left: 16px;      /* para que el snap respete el padding */
   scrollbar-width: none;
+  margin-bottom: 40%
 }
 .slider::-webkit-scrollbar {
   display: none;
@@ -227,6 +228,34 @@ h1, h2, h3 {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .tarjetaBroadway > a,
 .tarjetaGreenwich > a,
 .tarjetaYork > a {
@@ -283,6 +312,7 @@ div#york h2{
 div#york{
   margin-top: 10px;
   background-color: #3E361A;
+  margin-bottom: 40%
 }
 
 /* Carretes lineas mapas */
@@ -570,8 +600,27 @@ div#york{
   margin: 5px auto;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Carrete de heroes */
+
 .carreteHeroes {
+  margin-top: 10%;
   display: flex;
   gap: 12px;
   overflow-x: auto;
@@ -767,4 +816,132 @@ div#york{
 }
 #tituloViolet p{
   margin: 5px;
+}
+
+
+.etiquetaCarreteHeroes{
+  position: absolute;
+  right: 0;
+  border-radius: 16px;
+  padding: 3px 3px;
+  border: solid 4px #60f8b3;
+  background: #000000;
+}
+
+.etiquetaCarreteHeroes p{
+  margin: 0px;
+  text-align: right;
+  font-style: italic;
+  color: #60f8b3;
+  font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.formulario {
+  margin-top: 40%;
+  margin-bottom: 100%;
+}
+
+.formulario p {
+  margin-bottom: 20%;
+}
+
+.formulario form {
+  text-align: center;
+}
+
+.formulario form label {
+  color: #60f8b3;
+  font-size: x-large;
+  text-align: left;
+  margin-bottom: 10%;
+  vertical-align: middle;
+  font-family: 'DeadlockTitle';
+}
+
+.formulario form select {
+  margin-bottom: 10%;
+  border-radius: 16px;
+  background: #F4E7D3;
+  height: 35px;
+  font-family: 'DeadlockBody';
+  text-align: center;
+}
+
+.formulario form input {
+  border-radius: 16px;
+  font-family: 'DeadlockTitle';
+  background-color: #000d18;
+  color: #60f8b3;
+  border: solid 4px #60f8b3;
+  width: 55%;
+  height: 35%;
+  font-size: x-large;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TABLETS */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* Arreglando margenes */
+  header {
+    margin-bottom: 20%;
+  }
+
+  
+
 }

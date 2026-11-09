@@ -23,6 +23,11 @@ body {
 header {
     font-family: 'DeadlockTitle';
     font-size: xx-large;
+    border-radius: 16px;
+    padding: 3px 3px;
+    border: solid 4px #60f8b3;
+    background: #000000;
+    width: fit-content;
 }
 
 header a {
