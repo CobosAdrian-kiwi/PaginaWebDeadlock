@@ -21,7 +21,7 @@ body {
     color: #F4E7D3;
 }
 
-header {
+#titulo {
   background-image: url(fotos/general/themalestrom2.png);
   background-size: contain;
   margin-bottom: 60%;
@@ -222,6 +222,10 @@ div.archmother{
   background-size: auto;
   background-position: 40% 6%;
   color: white;
+}
+
+div.archmother>img{
+  margin-top: 5%;
 }
 
 h1, h2, h3 {
@@ -955,6 +959,11 @@ div#york{
     margin-bottom: 50%;
   }
 
+  div.slider {
+    margin-bottom: 15%;
+  }
+
+
 
   /* Tarjeta de patrones */
   
@@ -1031,6 +1040,158 @@ td.parrafo p#parrafoArch{
   border-radius: 5px;
   color: white;
   margin-top: -3px;
+}
+
+.tarjetaBroadway,
+.tarjetaGreenwich,
+.tarjetaYork {
+  min-height: 400px;
+}
+
+
+.carreteHeroes {
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  place-items: center;
+}
+
+.tarjetaHeroe {             
+  min-height: 160px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 14px;
+  border: solid #F4E7D3;
+  max-width: 120px;
+  min-width: 120px;
+  margin-bottom: 15%;
+}
+
+.etiquetaCarreteHeroes{
+  display: none;
+}
+
+.formulario {
+    margin-top: 15%; /* Reducimos el margen superior porque la tablet es más ancha */
+    margin-bottom: 20%;
+  }
+
+  .formulario form {
+    display: grid;
+    /* Dos columnas: una para el texto (label) y otra para el desplegable (select) */
+    grid-template-columns: max-content 280px; 
+    gap: 25px 20px; /* 25px de espacio entre filas, 20px entre texto y select */
+    justify-content: center; /* Centra toda la "tabla" del formulario en la pantalla */
+    align-items: center; /* Alinea verticalmente el texto con su select */
+  }
+
+  /* Ocultamos los <br> en tablet para que no rompan el Grid */
+  .formulario form br {
+    display: none;
+  }
+
+  .formulario form label {
+    font-size: 1.8rem; /* Más grande que x-large */
+    margin-bottom: 0; /* El gap del grid ya se encarga de separar las filas */
+    text-align: right; /* Alinea los textos hacia el select para que se vea ordenado */
+  }
+
+  .formulario form select {
+    width: 100%; /* Ocupa los 280px definidos en la columna del grid */
+    height: 48px; /* Más alto y cómodo para tocar en tablet */
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    padding: 0 10px;
+  }
+
+  .formulario form input[type="submit"] {
+    grid-column: 1 / -1; /* Hace que el botón ocupe el ancho de ambas columnas */
+    justify-self: center; /* Centra el botón */
+    width: 60%;
+    height: 55px; /* En móvil tenías height: 35%, en px es más seguro */
+    font-size: 1.8rem;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1025px) {
+  #titulo{
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  #titulo img {
+    width: fit-content;
+  }
+  
+  header {
+    margin-bottom: 10%;
+  }
+
+  .slider {
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  gap: 12px;
+  padding: 16px 100px;
+  margin-bottom: 40%
+}
+
+.tarjetaPatron {
+  background-position: 200% 0%;
+}
+
+div.rey>img{
+  margin-top: 2%;
+}
+div.archmother>img {
+  margin-top: 2%;
+}
+
+td.parrafo {
+  padding-right: 60%;
+  padding-left: 5%;
+  color: black;
+}
+
+td.parrafo p{
+  text-align: center;
+  background-color: rgba(86, 46, 0, 0.5);
+  border-radius: 5px;
+  color: white;
+  margin-top: -3px;
+}
+
+td.parrafo p#parrafoArch{
+  text-align: center;
+  background-color: rgba(0, 20, 86, 0.5);
+  border-radius: 5px;
+  color: white;
+  margin-top: -3px;
+}
+
+div>a img {
+  margin-left: 15%;
 }
 
 }
